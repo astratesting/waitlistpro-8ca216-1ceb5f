@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.card {
+  @apply rounded-3xl border border-white/10 bg-white/[0.06] p-6 shadow-glow backdrop-blur;
+}
+
+.input {
+  @apply w-full rounded-2xl border-white/10 bg-white/10 px-4 py-3 text-white placeholder:text-slate-400 focus:border-blue-400 focus:ring-blue-400;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-2xl bg-blue-500 px-5 py-3 font-semibold text-white transition hover:bg-blue-400;
+}
